@@ -8,7 +8,7 @@ import { Layout } from './Layout';
 
 import LoadingRocket from './images/loading-rocket.gif';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import './index.css';
 import './resp.css';
@@ -16,24 +16,25 @@ import './resp.css';
 function App() {
 
   const [loading, setLoading] = useState(true);
-  const [fadeOut, setFadeOut] = useState(false); 
+  const [fadeOut, setFadeOut] = useState(false);
 
-  useEffect(() => {
-
+  window.onload = () => {
+    
     setLoading(true);
 
-    const timer = setTimeout(() => {
+    setTimeout(() => {
 
       setFadeOut(true);
+
       setTimeout(() => {
+
         setLoading(false);
+
       }, 300);
 
     }, 1000);
 
-    return () => clearTimeout(timer);
-
-  }, []);
+  };
 
   return (
     <BrowserRouter>
