@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import { Link } from 'react-router-dom';
+
 export default function ProjectCard({project}) {
 
     useEffect(() => {
@@ -30,9 +32,11 @@ export default function ProjectCard({project}) {
                 </div>
                 <p data-aos="fade-up" data-aos-duration="1200">{project.projectDesc}</p>
 
-                <a href={`/projects/${project.id}`} data-aos="fade-up" data-aos-duration="1000">
+                <h5 data-aos="fade-up" data-aos-duration="1000">
+                <Link to={`/projects/${project.id}`}>
                     <button>READ MORE</button>
-                </a>
+                </Link>
+                </h5>
 
             </div>
 
