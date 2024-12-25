@@ -1,0 +1,1610 @@
+
+/* RESPONSIVE MOBILE */
+
+@media only screen and (max-width: 500px) {
+
+    /* ROOT */
+
+    :root {
+        --section-padding: 7vw;
+    }
+
+    /* ================================================================== */
+    /* ============================= LOADING ============================ */
+    /* ================================================================== */
+    
+    .loading img {
+        width: 80vw;
+        height: auto;
+    }
+    
+    .loading h1 {
+        font-size: 6vw;
+        font-weight: 500;
+        color: var(--black);
+    }
+    
+    /* ================================================================== */
+    /* ============================= NAVBAR ============================= */
+    /* ================================================================== */
+
+    nav {
+        width: 100%;
+        height: 20vw;
+    }
+    
+    nav .name {
+        font-size: 3.5vw;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+    
+    .ham {
+        display: flex;
+    }
+    
+    .ham img {
+        width: 5.5vw;
+        height: auto;
+    }
+
+    /* ================================================================== */
+    /* =============================== HOME ============================= */
+    /* ================================================================== */
+
+    .home {
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: left;
+
+        background: url(resp-background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .home-glow:nth-of-type(1) {
+        position: absolute;
+        top: 55%;
+        left: 10%;
+      
+        width: 20vw;
+        height: 20vw;
+      
+        border-radius: 100%;
+        filter: blur(120px);
+      
+        background: rgba(0, 194, 255, 0.25);
+      }
+      
+    .home-glow:nth-of-type(2) {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        
+        width: 40vw;
+        height: 40vw;
+        
+        border-radius: 100%;
+        filter: blur(200px);
+        
+        background: rgba(0, 194, 255, 0.25);
+    }
+    
+    .home h1 {
+        font-size: 11vw;
+        font-weight: 800;
+        color: var(--white);
+        line-height: 88%;
+    }
+    
+    .home h1 span {
+        position: relative;
+        color: var(--home-blue);
+    }
+    
+    .home h1 span img {
+        display: none;
+    }
+    
+    .home h3 {
+        font-size: 6vw;
+        font-weight: 400;
+        color: var(--white);
+    }
+    
+    .home h3 span:nth-of-type(1) {
+        color: var(--home-darkblue);
+    }
+    
+    .home h3 span:nth-of-type(2) {
+        color: var(--home-pink);
+    }
+
+    .arrow-container {
+        display: none;
+    }
+
+    /* ================================================================== */
+    /* =============================== ABOUT ============================ */
+    /* ================================================================== */
+
+    .about {
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        scroll-margin-top: 150px;
+    
+        padding: 0 var(--section-padding) 30vw var(--section-padding);
+    }
+    
+    .about h1 {
+        width: 100%;
+        font-size: 10vw;
+        font-weight: 800;
+        color: var(--white);
+        letter-spacing: 0.8vw;
+    
+        text-align: left;
+        line-height: 90%;
+    }
+    
+    .about-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;    
+    }
+    
+    .about-right p {
+        margin-top: 7vw;
+        font-family: 'MabryPro', sans-serif;
+        font-size: 4.4vw;
+        font-weight: 500;
+        color: var(--lightgray);
+        line-height: 140%;
+    }
+    
+    .about-right a {
+        margin-top: 4.5vw;
+        width: 100%;
+        height: 3.5vw;
+    }
+    
+    .about-right button {
+    
+        font-family: 'Monument', sans-serif;
+        margin-top: 2vw;
+        width: 100%;
+        height: 14vw;
+        background: var(--button-color);
+        border: 2px solid var(--button-stroke);
+        border-radius: 1.5vw;
+        outline: none;
+        font-size: 4.4vw;
+        font-weight: 400;
+        color: var(--white);
+    }
+    
+    .about-right button:hover {
+        cursor: pointer;
+        scale: 0.97;
+    }
+
+    /* ================================================================== */
+    /* ============================= PROJECTS =========================== */
+    /* ================================================================== */
+
+    .projects {
+        width: 100%;
+        height: auto;
+    
+        scroll-margin-top: -20px;
+    
+        padding: 30vw var(--section-padding);
+    }
+    
+    .projects-headline {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .projects-headline h4 {
+        font-family: 'MabryPro', sans-serif;
+        font-size: 5vw;
+        font-weight: 500;
+        color: var(--lightgray);
+    }
+    
+    .projects-headline h1 {
+        font-size: 9vw;
+        font-weight: 800;
+        color: var(--white);
+        line-height: 95%;
+    }
+    
+    .projects-tiles {
+        margin-top: 10vw;
+        width: 100%;
+        height: auto;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 8vw;
+    }
+    
+    .projects-tile {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 25vw;
+    }
+    
+    .projects-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1vw;
+    }
+    
+    .projects-text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .projects-tile:nth-of-type(2n) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    
+    .projects-tile:nth-of-type(2n) .projects-left {
+        width: 100%;
+    }
+    
+    .projects-left h2 {
+        max-width: 100%;
+        height: auto;
+        font-size: 7vw;
+        font-weight: 400;
+        color: var(--white);
+        line-height: 90%;
+    }
+    
+    .projects-technologies {
+        margin-top: 3vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2vw;
+    }
+    
+    .projects-technologies div {
+        width: auto;
+        height: auto;
+    
+        font-size: 3vw;
+        font-weight: 500;
+        color: var(--white);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        border-radius: 1.5vw;
+    
+        padding: 1.5vw 3vw;
+    }
+    
+    .projects-technologies div:nth-of-type(1) {
+        background: var(--projectsFirstBtn);
+        border: 1px solid var(--projectsFirstStroke);
+    }
+    
+    .projects-technologies div:nth-of-type(2) {
+        background: var(--projectsSecondBtn);
+        border: 1px solid var(--projectsSecondStroke);
+    }
+    
+    .projects-left p {
+        max-width: 100%;
+        margin-top: 5vw;
+        font-family: 'MabryPro', sans-serif;
+    
+        font-size: 4.4vw;
+        font-weight: 500;
+        color: var(--lightgray);
+    
+        line-height: 150%;
+    }
+    
+    .projects-left a {
+        width: 100%;
+    }
+
+    .projects-left button {
+        font-family: 'Monument', sans-serif;
+        margin-top: 6vw;
+    
+        width: 100% !important;
+        height: 14vw;
+    
+        background: var(--button-color);
+        border: 2px solid var(--button-stroke);
+        border-radius: 1.5vw;
+        outline: none;
+    
+        font-size: 4.4vw;
+        font-weight: 400;
+        color: var(--white);
+    }
+    
+    .projects-left button:hover {
+        cursor: pointer;
+    }
+    
+    .projects-right {
+        margin-top: 5vw;
+        width: 100%;
+        height: 80vw;
+    
+        position: relative;
+        flex-shrink: 1;
+    }
+    
+    .projects-right img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+    
+        top: 50%;
+        left: 50%;
+    }
+    
+    .projects-right img:nth-of-type(1) {
+        width: 80vw;
+        height: auto;
+    }
+    
+    .projects-right img:nth-of-type(2) {
+        width: 65vw;
+        height: auto;
+    }
+    
+    .viewMore {
+        margin-top: 20vw;
+    
+        width: 100%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .viewMore button {
+        font-family: 'Monument', sans-serif;
+        width: 70vw;
+        height: 14vw;
+    
+        background: var(--white);
+        border-radius: 1.5vw;
+        outline: none;
+    
+        font-size: 4.4vw;
+        font-weight: 400;
+        color: var(--black);
+    }
+    
+    .viewMore button:hover {
+        cursor: pointer;
+    }
+
+    /* ================================================================== */
+    /* =============================== FOOTER =========================== */
+    /* ================================================================== */
+
+    footer {
+        width: 100%;
+        height: auto;
+    
+        background: var(--footerBackground);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        padding: 14vw 0;
+    }
+    
+    .footer-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.4vw;
+    }
+    
+    .footer-left h4 {
+        font-size: 7vw;
+        font-weight: 500;
+        color: var(--white);
+        line-height: 60%;
+    }
+    
+    .footer-left p {
+        font-family: 'MabryPro', sans-serif;
+        font-size: 6vw;
+        font-weight: 500;
+        color: var(--white);
+    }
+    
+    .footer-elements {
+        margin-top: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    
+        gap: 15vw;
+    }
+    
+    .footer-element h5 {
+        font-size: 4vw;
+        font-weight: 500;
+        color: var(--white);
+    }
+    
+    .footer-element ul {
+        margin-top: 3vw;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+    
+    .footer-element:nth-of-type(1) ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        gap: 2vw;
+    }
+    
+    .footer-element ul li img {
+        width: auto;
+        height: 6vw;
+    }
+    
+    .footer-element ul li img:hover {
+        cursor: pointer;
+    }
+    
+    .footer-element ul li a {
+        font-family: 'MabryPro';
+        font-size: 4.2vw;
+        font-weight: 500;
+        color: var(--lightgray);
+    }
+
+    /* PAGES */
+
+    /* ================================================================== */
+    /* ============================= ABOUT US =========================== */
+    /* ================================================================== */
+
+    .aboutMe-headline {
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    
+        padding: 30vw var(--section-padding);
+    }
+    
+    .aboutMe-headline-text {
+        text-align: left;
+    }
+    
+    .aboutMe-headline-text h4 {
+        font-family: 'MabryPro', sans-serif;
+        font-size: 5vw;
+        font-weight: 500;
+        color: var(--lightgray);
+    }
+    
+    .aboutMe-headline-text h1 {
+        font-size: 10vw;
+        font-weight: 800;
+        color: var(--white);
+        line-height: 95%;
+    }
+    
+    .aboutMe-headline p {
+        margin-top: 5vw;
+        font-family: 'MabryPro';
+        font-size: 4.4vw;
+        font-weight: 500;
+        color: var(--lightgray);
+    }
+    
+    /* ABOUT ME - OFFER */
+    
+    .aboutMe-offer {
+        width: 100%;
+        height: auto;
+    
+        padding: 2vw var(--section-padding);
+    }
+    
+    .aboutMe-offer h2 {
+        font-size: 7.3vw;
+        font-weight: 400;
+        color: var(--white);
+        text-align: center;
+    }
+    
+    .aboutMe-offer-tiles {
+        margin-top: 6vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4vw;
+    }
+    
+    .aboutMe-offer-tile {
+        width: 100%;
+        height: 40vw;
+    
+        padding: 0 4vw;
+    
+        background: linear-gradient(90deg, rgba(217,217,217,0.1) 0%, rgba(217,217,217,0.02) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(20px);
+        border-radius: 1.5vw;
+        overflow: hidden;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: unset;
+        text-align: left;
+        gap: 8vw;
+    
+        position: relative;
+    }
+    
+    .aboutMe-offer-tile-glow {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    
+        width: 12.2vw;
+        height: 12.2vw;
+        
+        border-radius: 100%;
+        filter: blur(250px);
+    }
+    
+    .aboutMe-offer-tile:nth-of-type(1) .aboutMe-offer-tile-glow {
+        background: rgba(193, 61, 255, 0.25);
+    }
+    
+    .aboutMe-offer-tile:nth-of-type(2) .aboutMe-offer-tile-glow {
+        background: rgba(63, 108, 255, 0.25);
+    }
+    
+    .aboutMe-offer-tile:nth-of-type(3) .aboutMe-offer-tile-glow {
+        background: rgba(88, 224, 255, 0.25);
+    }
+    
+    .aboutMe-offer-tile-top {
+        width: auto;
+        height: auto;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .aboutMe-offer-tile-top img {
+        width: 14vw;
+        height: auto;
+    }
+    
+    .aboutMe-offer-tile-text {
+        width: 100%;
+        height: auto;
+        
+        font-family: 'MabryPro';
+        display: flex;
+        flex-direction: column;
+        gap: 0.4vw;
+    }
+    
+    .aboutMe-offer-tile-text h5 {
+        font-size: 5vw;
+        font-weight: 600;
+        color: var(--white);
+    }
+    
+    .aboutMe-offer-tile-text p {
+        margin-top: 1vw;
+        font-size: 4vw;
+        font-weight: 500;
+        color: var(--aboutMe-tile-text);
+        height: 16vw;
+        overflow: auto;
+    }
+    
+    /* ABOUT ME - DOWNLOAD CV */
+    
+    .aboutMe-cv {
+        margin-top: 5vw;
+        width: 100%;
+        height: 80vw;
+    
+        position: relative;
+    
+        padding: 20vw 0;
+    }
+    
+    .aboutMe-cv-container {
+        width: 100%;
+        height: 80vw;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        gap: 1.5vw;
+    
+        background: rgb(217,217,217);
+        background: linear-gradient(90deg, rgba(217,217,217,0.018644957983193322) 0%, rgba(217,217,217,0.1026785714285714) 100%);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    
+        box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10px);
+        z-index: 1;
+    }
+    
+    .aboutMe-cv-glow {
+        position: absolute;
+    }
+    
+    .aboutMe-cv-decoration:nth-of-type(1) .aboutMe-cv-glow:nth-of-type(1) {
+        width: 6vw;
+        height: 6vw;
+        border-radius: 100%;
+        background: rgba(255, 246, 215, 0.2);
+        top: -40%;
+        left: -40%;
+        filter: blur(180px);
+    }
+    
+    .aboutMe-cv-decoration:nth-of-type(1) .aboutMe-cv-glow:nth-of-type(2) {
+        width: 8vw;
+        height: 8vw;
+        border-radius: 100%;
+        background: rgba(242, 155, 152, 0.2);
+        top: 0%;
+        left: 0%;
+        filter: blur(80px);
+    }
+    
+    .aboutMe-cv-decoration:nth-of-type(3) .aboutMe-cv-glow:nth-of-type(1) {
+        width: 12vw;
+        height: 12vw;
+        border-radius: 100%;
+        background: rgba(255, 246, 215, 0.2);
+        top: -40%;
+        left: -40%;
+        filter: blur(140px);
+    }
+    
+    .aboutMe-cv-decoration:nth-of-type(3) .aboutMe-cv-glow:nth-of-type(2) {
+        width: 8vw;
+        height: 8vw;
+        border-radius: 100%;
+        background: rgba(152, 199, 242, 0.1);
+        top: 0%;
+        left: 0%;
+        filter: blur(120px);
+    }
+    
+    .aboutMe-cv-decoration {
+        position: absolute;
+    }
+    
+    .aboutMe-cv-decoration:nth-of-type(1) img {
+        width: 16vw;
+        height: auto;
+    }
+    
+    .aboutMe-cv-decoration:nth-of-type(1) {
+        left: 75%;
+        top: 15%;
+        z-index: 2;
+    
+    }
+    
+    .aboutMe-cv-decoration:nth-of-type(2) img {
+        width: 38vw;
+        height: auto;
+    }
+    
+    .aboutMe-cv-decoration:nth-of-type(2) {
+        left: 52%;
+        bottom: -50%;
+    }
+    
+    .aboutMe-cv-decoration:nth-of-type(3) img {
+        width: 22vw;
+        height: auto;
+    }
+    
+    .aboutMe-cv-decoration:nth-of-type(3) {
+        right: 87%;
+        top: 60%;
+        z-index: 2;
+    }
+    
+    .aboutMe-cv h2 {
+        width: 90%;
+        font-size: 6vw;
+        font-weight: 400;
+        color: var(--white);
+        line-height: auto;
+    }
+    
+    .aboutMe-cv button {
+        margin-top: 6vw;
+        font-family: 'Monument', sans-serif;
+        width: 55vw;
+        height: 14vw;
+    
+        background: var(--white); 
+        border-radius: 1.5vw;
+        border: none;
+        outline: none;
+    
+        font-size: 4.4vw;
+        font-weight: 800;
+        color: var(--black);
+    }
+    
+    .aboutMe-cv button:hover {
+        cursor: pointer;
+    }
+    
+    /* ABOUT ME - EXPERIENCE */
+    
+    .aboutMe-experience {
+        width: 100%;
+        height: auto;
+    
+        padding: 60vw var(--section-padding) 4vw var(--section-padding);
+    }
+    
+    .aboutMe-experience h2 {
+        font-size: 7.3vw;
+        font-weight: 400;
+        color: var(--white);
+    }
+    
+    .aboutMe-experience-tile {
+        font-family: 'MabryPro', sans-serif;
+        margin-top: 6vw;
+        width: 100%;
+        height: auto;
+    
+        background: #07050A;
+        border: 2px solid #2D2638;
+        border-radius: 1.5vw;
+    
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 4vw 4vw;
+    }
+    
+    .aboutMe-experience-tile h4 {
+        font-size: 6vw;
+        font-weight: 500;
+        color: var(--white);
+    }
+    
+    .aboutMe-experience-tile span {
+        font-size: 4vw;
+        font-weight: 800;
+        color: #5200FF;
+    }
+    
+    .aboutMe-experience-tile h5 {
+        margin-top: 3vw;
+        font-size: 5vw;
+        font-weight: 500;
+        color: var(--white);
+    }
+    
+    .aboutMe-experience-tile p {
+        margin-top: 2vw;
+        font-size: 4.4vw;
+        font-weight: 400;
+        color: var(--lightgray);
+        line-height: 130%;
+
+        height: 50vw;
+        overflow: scroll;
+
+        padding: 0 1vw 0 0;
+    }
+    
+    /* ABOUT ME - TILES */
+    
+    .aboutMe-tiles {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        padding: 12vw var(--section-padding);
+    }
+    
+    .aboutMe-education {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aboutMe-education h2 {
+        font-size: 7.3vw;
+        font-weight: 400;
+        color: var(--white);
+    }
+    
+    .aboutMe-education-tile {
+        margin-top: 6vw;
+        font-family: 'MabryPro';
+        width: 100%;
+        height: auto;
+    
+        background: #07050A;
+        border: 2px solid #2D2638;
+        border-radius: 1.5vw;
+    
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    
+        padding: 4vw 4vw;
+    }
+    
+    .aboutMe-education-tile h4 {
+        font-size: 6vw;
+        font-weight: 500;
+        color: var(--white);
+        line-height: 90%;
+    }
+    
+    .aboutMe-education-tile span {
+        margin-top: 0.3vw;
+        font-size: 4vw;
+        font-weight: 800;
+        color: #5200FF;
+    }
+    
+    .aboutMe-education-tile-info {
+        margin-top: 5vw;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    
+    .aboutMe-education-info-text p {
+        font-size: 4.5vw;
+        font-weight: 500;
+        color: var(--lightgray);
+    }
+    
+    .aboutMe-education-info-text h5 {
+        font-size: 5.5vw;
+        font-weight: 500;
+        color: var(--white);
+    }
+    
+    /* ABOUT ME - LANGUAGES */
+    
+    .aboutMe-languages {
+        margin-top: 16vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .aboutMe-languages h2 {
+        font-size: 7.3vw;
+        font-weight: 400;
+        color: var(--white);
+    }
+    
+    .aboutMe-languages-tiles {
+        margin-top: 6vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    
+    .aboutMe-languages-tile {
+        width: 100%;
+        height: auto;
+    
+        background: #07050A;
+        border: 2px solid #2D2638;
+        border-radius: 1.5vw;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        padding: 7vw 0;
+    }
+    
+    .aboutMe-languages-tile-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+    }
+    
+    .aboutMe-languages-tile-top h4 {
+        font-size: 6vw;
+        font-weight: 400;
+        color: var(--white);
+    }
+    
+    .aboutMe-languages-tile-top img {
+        width: 7vw;
+        height: auto;
+    }
+    
+    .aboutMe-languages-tile p {
+        font-family: 'MabryPro', sans-serif;
+        margin-top: 4vw;
+        font-size: 4.5vw;
+        font-weight: 400;
+        color: var(--lightgray);
+        line-height: 100%;
+    }
+    
+    .aboutMe-languages-tile h5 {
+        font-family: 'MabryPro', sans-serif;
+        font-size: 5.5vw;
+        font-weight: 400;
+        color: var(--white);
+    }
+
+    .aboutMe-languages-lines {
+        display: none;
+    }
+    
+    .aboutMe-languages-line {
+       display: none;
+    }
+    
+    /* ABOUT ME - SKILLS */
+    
+    .aboutMe-skills {
+        width: 100%;
+        min-height: 60vw;
+    
+        background: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        padding: 8vw var(--section-padding);
+    }
+    
+    .aboutMe-skills-headline {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .aboutMe-skills-headline h2 {
+        font-size: 7.3vw;
+        font-weight: 400;
+        color: var(--white);
+        transform: translateY(0);
+    }
+    
+    .aboutMe-skills-tiles {
+        margin-top: 5vw;
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 10vw;
+    
+        padding: 0 0;
+    }
+    
+    .aboutMe-skills-tile {
+        width: 100%;
+        height: auto;
+    
+        background: none;
+        border: none;
+        backdrop-filter: blur(0);
+        border-radius: 0;
+    
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    
+        padding: 0;
+    }
+    
+    .aboutMe-skills-tile:nth-of-type(1) {
+        transform: translateY(0);
+    }
+    .aboutMe-skills-tile:nth-of-type(2) {
+        transform: translateY(0);
+    }
+    .aboutMe-skills-tile:nth-of-type(3) {
+        transform: translateY(0);
+    }
+    .aboutMe-skills-tile:nth-of-type(4) {
+        transform: translateY(0);
+    }
+    
+    .aboutMe-skills-tile h4 {
+        width: max-content;
+        font-size: 5vw;
+        font-weight: 400;
+        color: var(--white);
+    }
+    
+    .aboutMe-skills-elements {
+        width: 100%;
+        margin-top: 4vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: flex-start;
+        align-content: center;
+        grid-template-rows: auto;
+        gap: 2vw;
+    }
+    
+    .aboutMe-skills-element {
+        width: 41vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+    }
+    
+    .aboutMe-skills-element img {
+        width: 12vw;
+        height: auto;
+    }
+    
+    .aboutMe-skills-element-text {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .aboutMe-skills-element-text h5 {
+        font-family: 'Satoshi', sans-serif;
+        font-size: 5vw;
+        font-weight: 900;
+        color: var(--white);
+        line-height: 127%;
+    }
+    
+    .aboutMe-skills-stars {
+        display: flex;
+        gap: 0.3vw;
+    }
+    
+    .aboutMe-skills-stars img {
+        width: 3.8vw;
+        height: auto;
+    }
+
+    .aboutMe-skills-tile:nth-of-type(3) {
+        margin-top: 3vw;
+    }
+    
+    /* ABOUT ME - HOBBY */
+    
+    .aboutMe-hobby {
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5vw;
+        
+        padding: 20vw var(--section-padding) 20vw var(--section-padding);
+    }
+    
+    .aboutMe-hobby-left {
+        width: 100%;
+        height: auto;
+    }
+    
+    .aboutMe-hobby h1 {
+        font-size: 12vw;
+        font-weight: 800;
+        color: var(--white);
+        line-height: 82%;
+        text-align: left;
+    }
+    
+    .aboutMe-hobby p {
+        width: 100%;
+        font-family: 'MabryPro', sans-serif;
+        font-size: 4.4vw;
+        font-weight: 400;
+        color: var(--lightgray);
+    }
+
+    /* ================================================================== */
+    /* ========================== SINGLE PROJECT ======================== */
+    /* ================================================================== */
+
+    .singleProject {
+        width: 100%;
+        height: auto;
+    
+        padding: 30vw var(--section-padding);
+    }
+    
+    .singleProject-headline {
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5vw;
+    }
+    
+    .singleProject-headline h1 {
+        font-size: 10vw;
+        font-weight: 800;
+        color: var(--white);
+    }
+
+    .singleProject-graphics {
+        transform: translateY(-5vw);
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .singleProject-graphics img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .singleProject-description {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5vw;
+    
+        padding: 0;
+    }
+    
+    .singleProject-description h2 {
+        font-size: 7.3vw;
+        font-weight: 800;
+        color: var(--white);
+        text-align: left;
+    }
+    
+    .singleProject-description p {
+        font-family: 'MabryPro', sans-serif;
+        font-size: 4.4vw;
+        font-weight: 400;
+        color: var(--lightgray);
+    }
+    
+    .singleProject-technologies {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        padding: 20vw 0 10vw 0;
+    }
+    
+    .singleProject-technologies-headline {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .singleProject-technologies-headline h4 {
+        font-size: 7.3vw;
+        font-weight: 400;
+        color: var(--white);
+    }
+    
+    .singleProject-tiles {
+        width: 100%;
+        margin-top: 6vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2vw;
+    }
+    
+    .swiper-slide {
+        height: 30vw !important;
+    
+        background: #07050A;
+        background: linear-gradient(130deg, rgba(217,217,217,0.020045518207282953) 0%, rgba(217,217,217,0.08167016806722693) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 2.5vw;
+        backdrop-filter: blur(30px);
+    
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    
+        cursor: grab;
+    }
+    
+    .swiper-slide:active {
+        cursor: grabbing;
+    }
+    
+    .swiper-pagination {
+        transform: translateY(3vw) !important;
+    }
+    
+    .swiper-slide p {
+        font-family: 'Satoshi', sans-serif;
+        font-size: 5vw;
+        font-weight: 900;
+        color: var(--white);
+    }
+    
+    .singleProject-live {
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    
+        position: relative;
+    
+        padding: 8vw 0;
+    }
+
+    .singleProject-live-decorations {
+        display: none;
+    }
+    
+    .singleProject-live-decorations img {
+        display: none;
+    }
+    
+    .singleProject-live h4 {
+        font-size: 7.3vw;
+        font-weight: 400;
+        color: var(--white);
+    }
+    
+    .singleProject-live-container {
+        margin-top: 6vw;
+        width: 100%;
+        border-radius: 2.5vw;
+    }
+    
+    .singleProject-live-image {
+        background-position: top;
+        border-radius: 2.5vw;
+        width: 100%;
+        height: 40vw !important;
+        background-size: cover;
+        transition: ease-in-out 6s;
+        background-position: top;
+    }
+    
+    .singleProject-live-image:hover {
+        background-position: bottom;
+    }
+    
+    .singleProject-checkmore {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 3vw;
+    
+        padding: 3vw 0;
+    }
+    
+    .singleProject-checkmore h2 {
+        font-size: 7.3vw;
+        font-weight: 800;
+        color: var(--white);
+        line-height: 150%;
+    }
+    
+    .singleProject-checkmore button {
+        font-family: 'Monument', sans-serif;
+        width: 85vw;
+        height: 14vw;
+    
+        outline: none;
+        background: var(--white);
+        border: none;
+        border-radius: 1.5vw;
+    
+        font-size: 4.4vw;
+        font-weight: 800;
+        color: var(--black);
+    }
+    
+    .singleProject-checkmore button:hover {
+        cursor: pointer;
+    }
+
+    /* ================================================================== */
+    /* ============================ ALL PROJECTS ======================== */
+    /* ================================================================== */
+
+    .allProjects {
+        width: 100%;
+        height: auto;
+    
+        padding: 30vw var(--section-padding);
+    }
+    
+    .allProjects-headline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .allProjects-headline h5 {
+        font-family: 'MabryPro', sans-serif;
+        font-size: 5.5vw;
+        font-weight: 400;
+        color: var(--white);
+        letter-spacing: 3.5vw;
+    }
+    
+    .allProjects-thumb {
+        transform: translateY(-1vw);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1vw;
+    }
+    
+    .allProjects-thumb h1 {
+        margin-top: 1vw;
+        font-size: 10vw;
+        font-weight: 800;
+        color: var(--white);
+        line-height: 100%;
+    }
+    
+    .allProjects-thumb img {
+        display: none;
+    }
+    
+    .allProjects-tiles {
+        margin-top: 5vw;
+        width: 100%;
+        height: auto;
+    
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 1vw;
+        row-gap: 4vw;
+    }
+    
+    .allProjects-tile {
+        width: 100%;
+        height: auto;
+    
+        background: #07050A;
+        border: 2px solid #2D2638;
+        border-radius: 1.5vw;
+    }
+    
+    .allProjects-tile img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1.5vw 1.5vw 0 0;
+    }
+    
+    .allProjects-tile-info {
+        display: flex;
+        flex-direction: column;
+        padding: 3vw 3vw;
+    }
+    
+    .allProjects-tile-info h4 {
+        font-family: 'Satoshi', sans-serif;
+        font-size: 6vw;
+        font-weight: 900;
+        color: var(--white);
+    }
+    
+    .allProjects-tile-info p {
+        margin-top: 1vw;
+        width: 100%;
+        overflow: auto;
+        min-height: 17.8vw;
+    
+        font-family: 'MabryPro', sans-serif;
+        font-size: 4.4vw;
+        font-weight: 600;
+        color: var(--lightgray);
+        line-height: 133%;
+        padding: 0 0.5vw 0 0;
+    }
+    
+    .allProjects-tile-info p::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    .allProjects-tile-info p::-webkit-scrollbar-track {
+        background: #3D3D3D;
+    }
+    
+    .allProjects-tile-info p::-webkit-scrollbar-thumb {
+        background: var(--white);
+    }
+    
+    .allProjects-tile-more {
+        margin-top: 5vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3vw;
+    }
+    
+    .allProjects-tile-more h5 {
+        font-family: 'MabryPro', sans-serif;
+        font-size: 3.5vw;
+        font-weight: 400;
+        color: #3D3D3D;
+    
+        transition: 0.5s;
+    }
+    
+    .allProjects-tile:hover .allProjects-tile-more h5 {
+        letter-spacing: 0.05vw;
+    }
+    
+    .allProjects-tile-more img {
+        transform: translateY(0.4vw);
+        width: 1.5vw;
+        height: auto;
+    }
+    
+    .allProjects-tile-more:hover {
+        cursor: pointer;
+    }
+
+    /* ================================================================== */
+    /* ============================== NO PAGE =========================== */
+    /* ================================================================== */
+
+    .noPage {
+        width: 100%;
+        height: 60vh;
+    
+        padding: 30vw var(--section-padding);
+    }
+    
+    .noPage h1 {
+        font-size: 12.5vw;
+        font-weight: 800;
+        color: #FF0000;
+    }
+    
+    .noPage p {
+        font-family: 'MabryPro', sans-serif;
+        font-size: 5vw;
+        font-weight: 500;
+        color: var(--white);
+    }
+    
+    .noPage button {
+        margin-top: 10vw;
+        font-family: 'Monument', sans-serif;
+        width: 100%;
+        height: 14vw;
+    
+        background: var(--white);
+        border-radius: 1.5vw;
+        outline: none;
+    
+        font-size: 4.4vw;
+        font-weight: 800;
+        color: var(--black);
+    
+        padding: 0 3.5vw;
+    }
+    
+    .noPage button:hover {
+        cursor: pointer;
+    }
+    
+}
