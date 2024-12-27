@@ -8,18 +8,24 @@ import Swiper from '../Components/Swiper';
 import FirstDecoration from '../images/decoration1.png';
 import SecondDecoration from '../images/decoration2.png';
 
+import NoPage from '../Pages/NoPage';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export function SingleProject() {
 
-    const { id } = useParams();
-    const project = allProjects[id-1];
-
     useEffect(() => {
         AOS.init();
         document.documentElement.scrollTo({ top:0, left:0, behavior: "instant" });
     }, []);
+
+    const { id } = useParams();
+    const project = allProjects.find(p => p.id === parseInt(id));
+
+    if (!project) {
+        return <NoPage />;
+    }
 
     var backgroundImg = {backgroundImage: `url(${project.scrollImage})`};
 
