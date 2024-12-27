@@ -3,7 +3,7 @@ import { Home } from './Pages/Home';
 import { About } from './Pages/About';
 import { AllProjects } from './Pages/AllProjects';
 import { SingleProject } from './Pages/SingleProject';
-import { NoPage } from './Pages/NoPage';
+import NoPage from './Pages/NoPage';
 import { Layout } from './Layout';
 
 import LoadingRocket from './images/loading-rocket.gif';
